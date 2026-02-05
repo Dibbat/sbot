@@ -1,5 +1,8 @@
 */build/*
+*/install/*
+*/log/*
 worlds/imav_indoor.world
 urdf/qws.urdf
 *.swp
 *~
+IMAV_2017_Virtual_Challenge
