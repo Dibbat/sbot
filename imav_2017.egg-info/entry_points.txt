@@ -1,0 +1,2 @@
+[console_scripts]
+ps2cmd_vel = scripts.ps2cmd_vel:main

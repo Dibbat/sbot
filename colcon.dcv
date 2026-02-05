@@ -1,0 +1,16 @@
+# Colcon Build Configuration
+# For ROS2 Humble/Foxy with ament_cmake
+
+[build]
+# Increase verbosity
+# verbose = True
+
+# Parallel jobs
+# parallel_workers = 4
+
+[test]
+# Run tests
+# ctest_args = --output-on-failure
+
+[merge-install]
+# Use merged install directory

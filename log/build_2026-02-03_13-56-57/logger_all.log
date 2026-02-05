@@ -1,0 +1,105 @@
+[1.760s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.762s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ea9d006a3e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ea9d00695a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ea9d00695a0>>)
+[2.032s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.034s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.037s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.037s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/d/IMAV_2017_Virtual_Challenge'
+[2.047s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.048s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.050s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.052s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.116s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'imav_2017'
+[2.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.226s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.240s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/humble
+[2.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.501s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_args' from command line to 'None'
+[2.502s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_target' from command line to 'None'
+[2.503s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.504s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_clean_cache' from command line to 'False'
+[2.506s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_clean_first' from command line to 'False'
+[2.507s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'cmake_force_configure' from command line to 'False'
+[2.508s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'ament_cmake_args' from command line to 'None'
+[2.510s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'catkin_cmake_args' from command line to 'None'
+[2.511s] Level 5:colcon.colcon_core.verb:set package 'imav_2017' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.512s] DEBUG:colcon.colcon_core.verb:Building package 'imav_2017' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017', 'merge_install': False, 'path': '/mnt/d/IMAV_2017_Virtual_Challenge', 'symlink_install': True, 'test_result_base': None}
+[2.514s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.521s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.523s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/d/IMAV_2017_Virtual_Challenge' with build type 'ament_cmake'
+[2.525s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/d/IMAV_2017_Virtual_Challenge'
+[2.540s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16
+[3.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16
+[3.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017
+[17.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imav_2017)
+[17.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017
+[17.678s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017' for CMake module files
+[18.404s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017' for CMake config files
+[18.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('imav_2017', 'cmake_prefix_path')
+[18.993s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.ps1'
+[19.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.dsv'
+[19.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.sh'
+[19.258s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib'
+[19.284s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/bin'
+[19.293s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/pkgconfig/imav_2017.pc'
+[19.303s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/python3.10/site-packages'
+[19.316s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/bin'
+[19.326s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.ps1'
+[19.413s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.dsv'
+[19.507s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.sh'
+[19.590s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.bash'
+[19.671s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.zsh'
+[19.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/colcon-core/packages/imav_2017)
+[19.897s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imav_2017)
+[19.900s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017' for CMake module files
+[20.555s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017' for CMake config files
+[21.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('imav_2017', 'cmake_prefix_path')
+[21.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.ps1'
+[21.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.dsv'
+[21.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/hook/cmake_prefix_path.sh'
+[21.422s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib'
+[21.445s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/bin'
+[21.452s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/pkgconfig/imav_2017.pc'
+[21.462s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/python3.10/site-packages'
+[21.474s] Level 1:colcon.colcon_core.environment:checking '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/bin'
+[21.483s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.ps1'
+[21.562s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.dsv'
+[21.634s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.sh'
+[21.705s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.bash'
+[21.782s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.zsh'
+[21.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/colcon-core/packages/imav_2017)
+[21.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.915s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.916s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.917s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.586s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[22.588s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.589s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.590s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.591s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[22.593s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.595s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/IMAV_2017_Virtual_Challenge/install/local_setup.ps1'
+[22.632s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/d/IMAV_2017_Virtual_Challenge/install/_local_setup_util_ps1.py'
+[22.664s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/IMAV_2017_Virtual_Challenge/install/setup.ps1'
+[22.698s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/IMAV_2017_Virtual_Challenge/install/local_setup.sh'
+[22.737s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/d/IMAV_2017_Virtual_Challenge/install/_local_setup_util_sh.py'
+[22.766s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/IMAV_2017_Virtual_Challenge/install/setup.sh'
+[22.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/IMAV_2017_Virtual_Challenge/install/local_setup.bash'
+[22.828s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/IMAV_2017_Virtual_Challenge/install/setup.bash'
+[22.860s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/d/IMAV_2017_Virtual_Challenge/install/local_setup.zsh'
+[22.901s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/d/IMAV_2017_Virtual_Challenge/install/setup.zsh'

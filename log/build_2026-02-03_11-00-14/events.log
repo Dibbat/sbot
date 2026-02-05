@@ -1,0 +1,258 @@
+[0.000000] (-) TimerEvent: {}
+[0.002023] (imav_2017) JobQueued: {'identifier': 'imav_2017', 'dependencies': OrderedDict()}
+[0.003480] (imav_2017) JobStarted: {'identifier': 'imav_2017'}
+[0.090400] (-) TimerEvent: {}
+[0.120719] (imav_2017) JobProgress: {'identifier': 'imav_2017', 'progress': 'cmake'}
+[0.190831] (-) TimerEvent: {}
+[0.223216] (imav_2017) JobProgress: {'identifier': 'imav_2017', 'progress': 'build'}
+[0.248401] (imav_2017) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', '--', '-j16', '-l16'], 'cwd': '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', 'env': OrderedDict([('USER', 'cool'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cool'), ('OLDPWD', '/mnt/d/IMAV_2017_Virtual_Challenge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cool'), ('NAME', 'DESKTOP-3ODBR80'), ('WSL_INTEROP', '/run/WSL/1988_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/PSL/miniconda3:/mnt/c/Users/PSL/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/PSL/miniconda3/Library/usr/bin:/mnt/c/Users/PSL/miniconda3/Library/bin:/mnt/c/Users/PSL/miniconda3/Scripts:/mnt/c/Users/PSL/miniconda3/bin:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/mnt/c/ETAP 2101:/mnt/c/ETAP 2101/ThirdParty/Python/Python384:/mnt/c/ETAP 2101/ThirdParty/Python/Python384/Scripts:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2024a/runtime/win64:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/PSL/miniconda3/condabin:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA:/mnt/c/Users/PSL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/users/psl/appdata/roaming/python/python310/scripts:/mnt/c/users/psl/.local/bin:/mnt/c/Users/PSL/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.302951] (-) TimerEvent: {}
+[0.404575] (-) TimerEvent: {}
+[0.506271] (-) TimerEvent: {}
+[0.608109] (-) TimerEvent: {}
+[0.710073] (-) TimerEvent: {}
+[0.753578] (imav_2017) CommandEnded: {'returncode': 0}
+[0.810387] (-) TimerEvent: {}
+[0.838443] (imav_2017) JobProgress: {'identifier': 'imav_2017', 'progress': 'install'}
+[0.901990] (imav_2017) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017'], 'cwd': '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', 'env': OrderedDict([('USER', 'cool'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cool'), ('OLDPWD', '/mnt/d/IMAV_2017_Virtual_Challenge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cool'), ('NAME', 'DESKTOP-3ODBR80'), ('WSL_INTEROP', '/run/WSL/1988_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/PSL/miniconda3:/mnt/c/Users/PSL/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/PSL/miniconda3/Library/usr/bin:/mnt/c/Users/PSL/miniconda3/Library/bin:/mnt/c/Users/PSL/miniconda3/Scripts:/mnt/c/Users/PSL/miniconda3/bin:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/mnt/c/ETAP 2101:/mnt/c/ETAP 2101/ThirdParty/Python/Python384:/mnt/c/ETAP 2101/ThirdParty/Python/Python384/Scripts:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2024a/runtime/win64:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/PSL/miniconda3/condabin:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA:/mnt/c/Users/PSL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/users/psl/appdata/roaming/python/python310/scripts:/mnt/c/users/psl/.local/bin:/mnt/c/Users/PSL/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.910673] (-) TimerEvent: {}
+[0.950738] (imav_2017) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.000578] (imav_2017) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.010962] (-) TimerEvent: {}
+[1.112785] (-) TimerEvent: {}
+[1.198383] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/imav_indoor.launch\n'}
+[1.213125] (-) TimerEvent: {}
+[1.315328] (-) TimerEvent: {}
+[1.334130] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/imav_indoor.py\n'}
+[1.415601] (-) TimerEvent: {}
+[1.465683] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/spawn_quadrotor.launch\n'}
+[1.515995] (-) TimerEvent: {}
+[1.593693] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/spawn_quadrotor.py\n'}
+[1.616377] (-) TimerEvent: {}
+[1.718138] (-) TimerEvent: {}
+[1.820067] (-) TimerEvent: {}
+[1.869027] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor.urdf.xacro\n'}
+[1.920360] (-) TimerEvent: {}
+[1.995765] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor_base.urdf.xacro\n'}
+[2.020831] (-) TimerEvent: {}
+[2.122826] (-) TimerEvent: {}
+[2.124427] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor_simple_controller.urdf.xacro\n'}
+[2.223285] (-) TimerEvent: {}
+[2.292506] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/generic_camera.urdf.xacro\n'}
+[2.323641] (-) TimerEvent: {}
+[2.425331] (-) TimerEvent: {}
+[2.461598] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/hokuyo_utm30lx.urdf.xacro\n'}
+[2.525645] (-) TimerEvent: {}
+[2.627308] (-) TimerEvent: {}
+[2.637401] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/quadrotor_sensors.urdf.xacro\n'}
+[2.727649] (-) TimerEvent: {}
+[2.811287] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/sonar_sensor.urdf.xacro\n'}
+[2.827978] (-) TimerEvent: {}
+[2.929830] (-) TimerEvent: {}
+[2.941293] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/spawnrobot.sh\n'}
+[3.030188] (-) TimerEvent: {}
+[3.132214] (-) TimerEvent: {}
+[3.234010] (-) TimerEvent: {}
+[3.335993] (-) TimerEvent: {}
+[3.352659] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/ardrone_testworld.world\n'}
+[3.436139] (-) TimerEvent: {}
+[3.486563] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/imav_indoor.world\n'}
+[3.536496] (-) TimerEvent: {}
+[3.638584] (-) TimerEvent: {}
+[3.664946] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/custom.material\n'}
+[3.738912] (-) TimerEvent: {}
+[3.838754] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/helipad1.jpg\n'}
+[3.843162] (-) TimerEvent: {}
+[3.945179] (-) TimerEvent: {}
+[4.025064] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/imav2017_logo_cfp.png\n'}
+[4.045572] (-) TimerEvent: {}
+[4.147499] (-) TimerEvent: {}
+[4.201531] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/imav_indoor.world.xacro\n'}
+[4.247948] (-) TimerEvent: {}
+[4.349996] (-) TimerEvent: {}
+[4.376575] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/macros.urdf.xacro\n'}
+[4.450442] (-) TimerEvent: {}
+[4.552279] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/mathworks_logo1.png\n'}
+[4.556122] (-) TimerEvent: {}
+[4.657818] (-) TimerEvent: {}
+[4.728490] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/mathworks_logo2.jpg\n'}
+[4.758112] (-) TimerEvent: {}
+[4.860013] (-) TimerEvent: {}
+[4.905785] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/qrcode_text.png\n'}
+[4.960322] (-) TimerEvent: {}
+[5.062112] (-) TimerEvent: {}
+[5.112978] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/qrcode_url.png\n'}
+[5.162473] (-) TimerEvent: {}
+[5.264564] (-) TimerEvent: {}
+[5.332464] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/tree1.dae\n'}
+[5.364905] (-) TimerEvent: {}
+[5.466880] (-) TimerEvent: {}
+[5.493726] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/tree1.obj\n'}
+[5.567105] (-) TimerEvent: {}
+[5.647481] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/wall.dae\n'}
+[5.667439] (-) TimerEvent: {}
+[5.769367] (-) TimerEvent: {}
+[5.800495] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/x1.jpg\n'}
+[5.869593] (-) TimerEvent: {}
+[5.953800] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/x1.png\n'}
+[5.969890] (-) TimerEvent: {}
+[6.071644] (-) TimerEvent: {}
+[6.173526] (-) TimerEvent: {}
+[6.275371] (-) TimerEvent: {}
+[6.377200] (-) TimerEvent: {}
+[6.478850] (-) TimerEvent: {}
+[6.580853] (-) TimerEvent: {}
+[6.682637] (-) TimerEvent: {}
+[6.784507] (-) TimerEvent: {}
+[6.886373] (-) TimerEvent: {}
+[6.894765] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/blender/hokuyo_utm30lx.blend\n'}
+[6.986629] (-) TimerEvent: {}
+[7.057669] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lx.dae\n'}
+[7.087061] (-) TimerEvent: {}
+[7.188827] (-) TimerEvent: {}
+[7.223265] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lx.stl\n'}
+[7.289176] (-) TimerEvent: {}
+[7.390961] (-) TimerEvent: {}
+[7.392868] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lxTEST_SELF_FILTER.dae\n'}
+[7.491321] (-) TimerEvent: {}
+[7.561753] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/kinect_camera/kinect_camera_simple.dae\n'}
+[7.591642] (-) TimerEvent: {}
+[7.693384] (-) TimerEvent: {}
+[7.730361] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/kinect_camera/kinect_camera_simple.stl\n'}
+[7.793685] (-) TimerEvent: {}
+[7.895446] (-) TimerEvent: {}
+[7.951961] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_2.blend\n'}
+[7.995887] (-) TimerEvent: {}
+[8.097711] (-) TimerEvent: {}
+[8.175514] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_2.blend1\n'}
+[8.198084] (-) TimerEvent: {}
+[8.299933] (-) TimerEvent: {}
+[8.381941] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_3.blend1\n'}
+[8.400068] (-) TimerEvent: {}
+[8.501738] (-) TimerEvent: {}
+[8.577163] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD.blend\n'}
+[8.601964] (-) TimerEvent: {}
+[8.703649] (-) TimerEvent: {}
+[8.743093] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend\n'}
+[8.804016] (-) TimerEvent: {}
+[8.905746] (-) TimerEvent: {}
+[8.910322] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend1\n'}
+[9.006120] (-) TimerEvent: {}
+[9.083252] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend2\n'}
+[9.106417] (-) TimerEvent: {}
+[9.208038] (-) TimerEvent: {}
+[9.291933] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_base.blend\n'}
+[9.308404] (-) TimerEvent: {}
+[9.410380] (-) TimerEvent: {}
+[9.446675] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_2.dae\n'}
+[9.510681] (-) TimerEvent: {}
+[9.563003] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_2.stl\n'}
+[9.611006] (-) TimerEvent: {}
+[9.679031] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_3.dae\n'}
+[9.711225] (-) TimerEvent: {}
+[9.798963] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_3.stl\n'}
+[9.811475] (-) TimerEvent: {}
+[9.913102] (-) TimerEvent: {}
+[9.928341] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_4.dae\n'}
+[10.013422] (-) TimerEvent: {}
+[10.063032] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_4.stl\n'}
+[10.113896] (-) TimerEvent: {}
+[10.213558] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_base.dae\n'}
+[10.217629] (-) TimerEvent: {}
+[10.319325] (-) TimerEvent: {}
+[10.352569] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_base.stl\n'}
+[10.419661] (-) TimerEvent: {}
+[10.521330] (-) TimerEvent: {}
+[10.524171] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/sonar_sensor/blender/max_sonar_ez4.blend\n'}
+[10.621712] (-) TimerEvent: {}
+[10.665949] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/sonar_sensor/max_sonar_ez4.dae\n'}
+[10.722078] (-) TimerEvent: {}
+[10.824030] (-) TimerEvent: {}
+[10.829297] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v1.dae\n'}
+[10.924320] (-) TimerEvent: {}
+[10.970961] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v1.stl\n'}
+[11.024574] (-) TimerEvent: {}
+[11.117545] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v2.dae\n'}
+[11.124851] (-) TimerEvent: {}
+[11.226450] (-) TimerEvent: {}
+[11.279976] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v2.stl\n'}
+[11.326748] (-) TimerEvent: {}
+[11.385501] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/imav_2017/ps2cmd_vel.py\n'}
+[11.427031] (-) TimerEvent: {}
+[11.528727] (-) TimerEvent: {}
+[11.630684] (-) TimerEvent: {}
+[11.642092] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/package_run_dependencies/imav_2017\n'}
+[11.731058] (-) TimerEvent: {}
+[11.832776] (-) TimerEvent: {}
+[11.905098] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/parent_prefix_path/imav_2017\n'}
+[11.933151] (-) TimerEvent: {}
+[12.013525] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/ament_prefix_path.sh\n'}
+[12.033337] (-) TimerEvent: {}
+[12.134930] (-) TimerEvent: {}
+[12.145560] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/ament_prefix_path.dsv\n'}
+[12.235451] (-) TimerEvent: {}
+[12.251369] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/path.sh\n'}
+[12.335778] (-) TimerEvent: {}
+[12.381899] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/path.dsv\n'}
+[12.436167] (-) TimerEvent: {}
+[12.490543] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.bash\n'}
+[12.536385] (-) TimerEvent: {}
+[12.600351] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.sh\n'}
+[12.636719] (-) TimerEvent: {}
+[12.709966] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.zsh\n'}
+[12.736977] (-) TimerEvent: {}
+[12.819128] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.dsv\n'}
+[12.837236] (-) TimerEvent: {}
+[12.869578] (imav_2017) StdoutLine: {'line': b'-- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.dsv\n'}
+[12.937532] (-) TimerEvent: {}
+[13.039229] (-) TimerEvent: {}
+[13.140935] (-) TimerEvent: {}
+[13.242668] (-) TimerEvent: {}
+[13.280352] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/packages/imav_2017\n'}
+[13.342986] (-) TimerEvent: {}
+[13.409102] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/cmake/imav_2017Config.cmake\n'}
+[13.443276] (-) TimerEvent: {}
+[13.522155] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/cmake/imav_2017Config-version.cmake\n'}
+[13.543591] (-) TimerEvent: {}
+[13.612226] (imav_2017) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.xml\n'}
+[13.633878] (imav_2017) CommandEnded: {'returncode': 0}
+[13.644200] (-) TimerEvent: {}
+[13.746504] (-) TimerEvent: {}
+[13.848454] (-) TimerEvent: {}
+[13.950161] (-) TimerEvent: {}
+[14.052000] (-) TimerEvent: {}
+[14.153941] (-) TimerEvent: {}
+[14.256589] (-) TimerEvent: {}
+[14.359981] (-) TimerEvent: {}
+[14.463334] (-) TimerEvent: {}
+[14.578645] (-) TimerEvent: {}
+[14.691077] (-) TimerEvent: {}
+[14.802886] (-) TimerEvent: {}
+[14.934684] (-) TimerEvent: {}
+[15.036334] (-) TimerEvent: {}
+[15.137906] (-) TimerEvent: {}
+[15.241185] (-) TimerEvent: {}
+[15.342668] (-) TimerEvent: {}
+[15.444076] (-) TimerEvent: {}
+[15.545756] (-) TimerEvent: {}
+[15.647599] (-) TimerEvent: {}
+[15.749239] (-) TimerEvent: {}
+[15.851226] (-) TimerEvent: {}
+[15.953114] (-) TimerEvent: {}
+[16.055093] (-) TimerEvent: {}
+[16.157279] (-) TimerEvent: {}
+[16.259363] (-) TimerEvent: {}
+[16.361405] (-) TimerEvent: {}
+[16.475689] (-) TimerEvent: {}
+[16.577804] (-) TimerEvent: {}
+[16.680460] (-) TimerEvent: {}
+[16.782175] (-) TimerEvent: {}
+[16.883619] (-) TimerEvent: {}
+[16.985072] (-) TimerEvent: {}
+[17.086806] (-) TimerEvent: {}
+[17.191025] (-) TimerEvent: {}
+[17.292821] (-) TimerEvent: {}
+[17.415251] (-) TimerEvent: {}
+[17.516593] (-) TimerEvent: {}
+[17.531454] (imav_2017) JobEnded: {'identifier': 'imav_2017', 'rc': 0}
+[17.559396] (-) EventReactorShutdown: {}

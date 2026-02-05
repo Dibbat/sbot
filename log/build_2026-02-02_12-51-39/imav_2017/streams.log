@@ -1,0 +1,86 @@
+[0.320s] Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/d/IMAV_2017_Virtual_Challenge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017
+[0.651s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.556s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.077s] -- Gazebo plugin build disabled
+[5.055s] -- Configuring done
+[6.380s] -- Generating done
+[7.160s] -- Build files have been written to: /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017
+[7.178s] Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /mnt/d/IMAV_2017_Virtual_Challenge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017
+[7.236s] Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16
+[7.736s] Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16
+[7.897s] Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017
+[7.948s] -- Install configuration: ""
+[8.029s] -- Execute custom install script
+[8.157s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/imav_indoor.launch
+[8.394s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/imav_indoor.py
+[8.635s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/spawn_quadrotor.launch
+[8.876s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//launch/spawn_quadrotor.py
+[9.291s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor.urdf.xacro
+[9.525s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor_base.urdf.xacro
+[9.734s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/quadrotor_simple_controller.urdf.xacro
+[9.953s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/generic_camera.urdf.xacro
+[10.187s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/hokuyo_utm30lx.urdf.xacro
+[10.418s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/quadrotor_sensors.urdf.xacro
+[10.654s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/sensors/sonar_sensor.urdf.xacro
+[10.878s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//urdf/spawnrobot.sh
+[11.351s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/ardrone_testworld.world
+[11.551s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/imav_indoor.world
+[11.756s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/custom.material
+[11.981s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/helipad1.jpg
+[12.216s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/imav2017_logo_cfp.png
+[12.488s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/imav_indoor.world.xacro
+[12.756s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/macros.urdf.xacro
+[13.016s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/mathworks_logo1.png
+[13.275s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/mathworks_logo2.jpg
+[13.539s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/qrcode_text.png
+[13.806s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/qrcode_url.png
+[14.080s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/tree1.dae
+[14.344s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/tree1.obj
+[14.606s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/wall.dae
+[14.872s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/x1.jpg
+[15.149s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//worlds/xacro/x1.png
+[16.134s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/blender/hokuyo_utm30lx.blend
+[16.427s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lx.dae
+[16.690s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lx.stl
+[16.951s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/hokuyo_utm30lx/hokuyo_utm_30lxTEST_SELF_FILTER.dae
+[17.214s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/kinect_camera/kinect_camera_simple.dae
+[17.480s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/kinect_camera/kinect_camera_simple.stl
+[17.756s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_2.blend
+[18.058s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_2.blend1
+[18.350s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_3.blend1
+[18.649s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD.blend
+[18.940s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend
+[19.252s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend1
+[19.568s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_CAD2.blend2
+[19.902s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/blender/quadrotor_base.blend
+[20.342s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_2.dae
+[20.682s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_2.stl
+[20.955s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_3.dae
+[21.209s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_3.stl
+[21.444s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_4.dae
+[21.677s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_4.stl
+[21.955s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_base.dae
+[22.201s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/quadrotor/quadrotor_base.stl
+[22.446s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/sonar_sensor/blender/max_sonar_ez4.blend
+[22.701s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/sonar_sensor/max_sonar_ez4.dae
+[22.938s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v1.dae
+[23.180s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v1.stl
+[23.428s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v2.dae
+[23.655s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017//meshes/thermaleye_camera/thermaleye_camera_hector_v2.stl
+[23.881s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/imav_2017/ps2cmd_vel.py
+[24.084s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/package_run_dependencies/imav_2017
+[24.345s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/parent_prefix_path/imav_2017
+[24.585s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/ament_prefix_path.sh
+[24.804s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/ament_prefix_path.dsv
+[25.011s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/path.sh
+[25.226s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/environment/path.dsv
+[25.424s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.bash
+[25.608s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.sh
+[25.806s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.zsh
+[26.009s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/local_setup.dsv
+[26.231s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.dsv
+[26.443s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/ament_index/resource_index/packages/imav_2017
+[26.678s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/cmake/imav_2017Config.cmake
+[26.871s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/cmake/imav_2017Config-version.cmake
+[27.083s] -- Symlinking: /mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/share/imav_2017/package.xml
+[27.249s] Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017

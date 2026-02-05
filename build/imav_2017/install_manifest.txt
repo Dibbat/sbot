@@ -1,0 +1,1 @@
+/mnt/d/IMAV_2017_Virtual_Challenge/install/imav_2017/lib/imav_2017/quadrotor_controller

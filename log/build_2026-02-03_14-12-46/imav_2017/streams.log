@@ -1,0 +1,12 @@
+[0.254s] Invoking command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16
+[0.867s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.114s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.559s] -- Gazebo plugin build disabled
+[2.793s] CMake Error at CMakeLists.txt:60 (configure_file):
+[2.797s]   configure_file COPYONLY could not be used in combination with NEWLINE_STYLE
+[2.802s] 
+[2.807s] 
+[5.875s] -- Configuring incomplete, errors occurred!
+[5.881s] See also "/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/CMakeOutput.log".
+[5.961s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[5.970s] Invoked command in '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017 -- -j16 -l16

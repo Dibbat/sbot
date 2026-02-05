@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://wiki.ros.org/xacro" >
+
+  <xacro:macro name="quadrotor_sensors" params="robot_name">
+    <!-- IMU Sensor Plugin attached to base_link -->
+    <gazebo reference="base_link">
+      <sensor name="imu_sensor" type="imu">
+        <always_on>true</always_on>
+        <update_rate>100.0</update_rate>
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.0</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.0</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.0</stddev>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.35</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.35</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.3</stddev>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
+        <plugin name="quadrotor_imu_sim" filename="libgazebo_ros_imu_sensor.so">
+          <ros>
+            <namespace>${robot_name}</namespace>
+            <remapping>~/out:=imu</remapping>
+          </ros>
+          <initial_orientation_as_reference>false</initial_orientation_as_reference>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+    <gazebo>
+
+      <!-- Hector plugins not available in ROS2, commenting out -->
+      <!-- Barometer sensor - no ROS2 equivalent yet -->
+      <!--
+      <plugin name="quadrotor_baro_sim" filename="libhector_gazebo_ros_baro.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>10.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>/${robot_name}/pressure_height</topicName>
+        <altimeterTopicName>altimeter</altimeterTopicName>
+        <offset>0</offset>
+        <drift>0.1</drift>
+        <gaussianNoise>0.5</gaussianNoise>
+      </plugin>
+      -->
+
+      <!-- Magnetometer - no ROS2 equivalent yet -->
+      <!--
+      <plugin name="quadrotor_magnetic_sim" filename="libhector_gazebo_ros_magnetic.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>10.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>/${robot_name}/magnetic</topicName>
+        <offset>0 0 0</offset>
+        <drift>0.0 0.0 0.0</drift>
+        <gaussianNoise>1.3e-2 1.3e-2 1.3e-2</gaussianNoise>
+      </plugin>
+      -->
+
+      <!-- GPS sensor - no ROS2 equivalent yet -->
+      <!--
+      <plugin name="quadrotor_gps_sim" filename="libhector_gazebo_ros_gps.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>4.0</updateRate>
+        <bodyName>base_link</bodyName>
+        <topicName>/${robot_name}/fix</topicName>
+        <velocityTopicName>/${robot_name}/fix_velocity</velocityTopicName>
+        <drift>5.0 5.0 5.0</drift>
+        <gaussianNoise>0.1 0.1 0.1</gaussianNoise>
+        <velocityDrift>0 0 0</velocityDrift>
+        <velocityGaussianNoise>0.1 0.1 0.1</velocityGaussianNoise>
+      </plugin>
+      -->
+
+      <!-- Ground truth using ROS2 Gazebo P3D plugin -->
+      <plugin name="quadrotor_groundtruth_sim" filename="libgazebo_ros_p3d.so">
+        <ros>
+          <namespace>${robot_name}</namespace>
+          <remapping>~/out:=ground_truth/state</remapping>
+        </ros>
+        <update_rate>100.0</update_rate>
+        <body_name>base_link</body_name>
+        <frame_name>map</frame_name>
+        <gaussian_noise>0.0</gaussian_noise>
+      </plugin>
+
+    </gazebo>
+  </xacro:macro>
+</robot>

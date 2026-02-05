@@ -1,0 +1,36 @@
+{
+  "topics": [
+    {
+      "topic": "/quadrotor_0/cmd_vel",
+      "type": "geometry_msgs/Twist",
+      "direction": "both"
+    },
+    {
+      "topic": "/quadrotor_0/imu",
+      "type": "sensor_msgs/Imu",
+      "direction": "both"
+    },
+    {
+      "topic": "/quadrotor_0/odometry",
+      "type": "nav_msgs/Odometry",
+      "direction": "both"
+    },
+    {
+      "topic": "/quadrotor_0/ground_truth",
+      "type": "nav_msgs/Odometry",
+      "direction": "both"
+    },
+    {
+      "topic": "/tf",
+      "type": "tf2_msgs/TFMessage",
+      "direction": "both"
+    },
+    {
+      "topic": "/joy",
+      "type": "sensor_msgs/Joy",
+      "direction": "both"
+    }
+  ],
+  "services": [],
+  "actions": []
+}

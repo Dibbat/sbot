@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://wiki.ros.org/xacro" >
+  
+  <!-- Main quadrotor link -->
+  <xacro:macro name="quadrotor_base_macro" params="robot_name"> 
+    <link name="base_link">
+      
+      <inertial>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="1.477" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.01152" ixy="0.0" ixz="0.0" iyy="0.01152" iyz="0.0" izz="0.0218" />
+      </inertial>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://imav_2017/meshes/quadrotor/quadrotor_4.dae"/>
+        </geometry>
+        <material name="black">
+          <color rgba="0.1 0.1 0.1 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://imav_2017/meshes/quadrotor/quadrotor_4.stl"/>
+        </geometry>
+      </collision>
+    </link>
+    
+    <!-- Gazebo-specific material for better rendering -->
+    <gazebo reference="base_link">
+      <material>Gazebo/DarkGrey</material>
+      <!-- Planar move plugin for cmd_vel control -->
+      <plugin name="quadrotor_controller" filename="libgazebo_ros_planar_move.so">
+        <ros>
+          <namespace>${robot_name}</namespace>
+          <remapping>cmd_vel:=cmd_vel</remapping>
+          <remapping>odom:=odom</remapping>
+        </ros>
+        <update_rate>100</update_rate>
+        <publish_rate>10</publish_rate>
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>true</publish_odom_tf>
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>

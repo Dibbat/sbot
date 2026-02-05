@@ -1,0 +1,9 @@
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/uninstall.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/imav_2017_uninstall.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/test.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/edit_cache.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/rebuild_cache.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/list_install_components.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/install.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/install/local.dir
+/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/install/strip.dir

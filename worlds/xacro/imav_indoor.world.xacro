@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+  
+  
+  <world name="imav_world" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    
+    <xacro:property name="width" value="10" />
+    <xacro:property name="length1" value="10" />
+    <xacro:property name="length2" value="10" />
+    <xacro:property name="length3" value="7" />
+    
+    <xacro:include filename="$(find imav_2017)/worlds/xacro/macros.urdf.xacro" />
+    
+    
+    <xacro:light_source/>
+    <xacro:phys/>
+    <xacro:gui_/>
+    
+    <xacro:scn amb="0.4 0.4 0.4 1" backg="0.7 0.7 0.7 1"/>
+    
+    <!-- Basic ground plane zones -->
+    <xacro:zone_texture name="takoff_landing" x="0"                              y="0.0" width="${width}" length="${length1}" texture="Kitchen/WoodFloor"/>
+    <xacro:zone_texture name="obstacle"       x="${length1/2+length2/2}"         y="0.0" width="${width}" length="${length2}" texture="Kitchen/Grass"/>
+    <xacro:zone_texture name="target"         x="${length1/2+length2+length3/2}" y="0.0" width="${width}" length="${length3}" texture="Kitchen/CounterTop"/>
+    
+    <!-- Wall obstacles -->
+    <xacro:wall_obstacle2 x="2.5" y="0.5"/>
+    
+    <!-- Walls -->
+    <xacro:wall_brand w="${length1+length2+length3}" h="${width/2}" l="0.2" x="${length1/2+length2/2-length3/4}" y="${width}" z="${width/4}"/>
+    <xacro:wall_imav w="${width}" h="${width/2}" l="0.2" x="${length1/2+length2+length3}" y="0" z="${width/4}"/>
+    
+    <!-- Dynamic obstacles with population spawning -->
+    <!-- Poles (uncommented for testing) -->
+    <xacro:poles2 w="${width*3/4}" l="${length2/2}" x="${length1/2+length2/4}"   y="${width/8}" num="10" distribution="uniform" h="3" r="0.25"/>
+    
+    <!-- Trees with foliage -->
+    <xacro:trees  w="${width*3/4}" l="${length2/2}" x="${length1/2+3*length2/4}" y="${width/8}" num="10" distribution="uniform"/>
+    
+    <!-- Bushes for terrain cover -->
+    <xacro:bushes w="${width*3/4}" l="${length2/2}" x="${length1/2+3*length2/4}" y="${width/8}" num="6"  distribution="uniform"/>
+    
+    <!-- Landing zones -->
+    <xacro:helipad_static size="1 1 0.01" x="-2.5" y="2.5"  z="0.1"/>
+    <xacro:helipad_mobile size="1 1 0.01" x="-2.5" y="-2.5" z="0.1" r="1" v="1"/>
+    
+    <!-- QR code marker -->
+    <xacro:QR1 size="0.5 0.5 0.01" x="${length1/2+length2+length3/2}" y="${width/4}"  z="0.1"/>
+    
+  </world>
+</sdf>

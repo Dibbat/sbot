@@ -1,0 +1,13 @@
+README.md
+package.xml
+setup.py
+imav_2017.egg-info/PKG-INFO
+imav_2017.egg-info/SOURCES.txt
+imav_2017.egg-info/dependency_links.txt
+imav_2017.egg-info/entry_points.txt
+imav_2017.egg-info/requires.txt
+imav_2017.egg-info/top_level.txt
+imav_2017.egg-info/zip-safe
+launch/imav_indoor.py
+launch/spawn_quadrotor.py
+resource/imav_2017

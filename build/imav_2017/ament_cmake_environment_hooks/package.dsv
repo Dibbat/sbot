@@ -1,0 +1,4 @@
+source;share/imav_2017/local_setup.bash
+source;share/imav_2017/local_setup.dsv
+source;share/imav_2017/local_setup.sh
+source;share/imav_2017/local_setup.zsh

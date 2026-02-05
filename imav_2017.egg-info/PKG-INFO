@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: imav_2017
+Version: 0.0.1
+Summary: IMAV 2017 Virtual Challenge - ROS2 Migration
+Maintainer: vince
+Maintainer-email: vince@todo.todo
+License: BSD
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

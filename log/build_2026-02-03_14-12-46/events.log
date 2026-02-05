@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.000944] (imav_2017) JobQueued: {'identifier': 'imav_2017', 'dependencies': OrderedDict()}
+[0.002686] (imav_2017) JobStarted: {'identifier': 'imav_2017'}
+[0.093162] (-) TimerEvent: {}
+[0.096263] (imav_2017) JobProgress: {'identifier': 'imav_2017', 'progress': 'cmake'}
+[0.179936] (imav_2017) JobProgress: {'identifier': 'imav_2017', 'progress': 'build'}
+[0.193499] (-) TimerEvent: {}
+[0.205489] (imav_2017) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', '--', '-j16', '-l16'], 'cwd': '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017', 'env': OrderedDict([('USER', 'cool'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cool'), ('OLDPWD', '/mnt/d/IMAV_2017_Virtual_Challenge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cool'), ('NAME', 'DESKTOP-3ODBR80'), ('WSL_INTEROP', '/run/WSL/27525_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Users/PSL/miniconda3:/mnt/c/Users/PSL/miniconda3/Library/mingw-w64/bin:/mnt/c/Users/PSL/miniconda3/Library/usr/bin:/mnt/c/Users/PSL/miniconda3/Library/bin:/mnt/c/Users/PSL/miniconda3/Scripts:/mnt/c/Users/PSL/miniconda3/bin:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand:/mnt/c/Users/PSL/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/mnt/c/ETAP 2101:/mnt/c/ETAP 2101/ThirdParty/Python/Python384:/mnt/c/ETAP 2101/ThirdParty/Python/Python384/Scripts:/mnt/c/Program Files/MATLAB/R2025b/runtime/win64:/mnt/c/Program Files/MATLAB/R2025b/bin:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2024a/runtime/win64:/mnt/c/Program Files/MATLAB/R2024a/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/PSL/miniconda3/condabin:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Files/fortran/bin/Intel64:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/mpirt:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64_win/compiler:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/opl/oplide:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cplex/bin/x64_win64:/mnt/c/Program Files/IBM/ILOG/CPLEX_Studio2211/cpoptimizer/bin/x64_win64:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Bandizip:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.3.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA:/mnt/c/Users/PSL/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/users/psl/appdata/roaming/python/python310/scripts:/mnt/c/users/psl/.local/bin:/mnt/c/Users/PSL/.vscode/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.293884] (-) TimerEvent: {}
+[0.395273] (-) TimerEvent: {}
+[0.496608] (-) TimerEvent: {}
+[0.597894] (-) TimerEvent: {}
+[0.699573] (-) TimerEvent: {}
+[0.801260] (-) TimerEvent: {}
+[0.866926] (imav_2017) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.901601] (-) TimerEvent: {}
+[1.003060] (-) TimerEvent: {}
+[1.104725] (-) TimerEvent: {}
+[1.206390] (-) TimerEvent: {}
+[1.308659] (-) TimerEvent: {}
+[1.410707] (-) TimerEvent: {}
+[1.512372] (-) TimerEvent: {}
+[1.614171] (-) TimerEvent: {}
+[1.715741] (-) TimerEvent: {}
+[1.940471] (-) TimerEvent: {}
+[2.041879] (-) TimerEvent: {}
+[2.114949] (imav_2017) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.142256] (-) TimerEvent: {}
+[2.243771] (-) TimerEvent: {}
+[2.345192] (-) TimerEvent: {}
+[2.446707] (-) TimerEvent: {}
+[2.548295] (-) TimerEvent: {}
+[2.559628] (imav_2017) StdoutLine: {'line': b'-- Gazebo plugin build disabled\n'}
+[2.648674] (-) TimerEvent: {}
+[2.750157] (-) TimerEvent: {}
+[2.793396] (imav_2017) StderrLine: {'line': b'CMake Error at CMakeLists.txt:60 (configure_file):\n'}
+[2.798484] (imav_2017) StderrLine: {'line': b'  configure_file COPYONLY could not be used in combination with NEWLINE_STYLE\n'}
+[2.802641] (imav_2017) StderrLine: {'line': b'\n'}
+[2.807962] (imav_2017) StderrLine: {'line': b'\n'}
+[2.850725] (-) TimerEvent: {}
+[2.952367] (-) TimerEvent: {}
+[3.053877] (-) TimerEvent: {}
+[3.155311] (-) TimerEvent: {}
+[3.256906] (-) TimerEvent: {}
+[3.358438] (-) TimerEvent: {}
+[3.459825] (-) TimerEvent: {}
+[3.561217] (-) TimerEvent: {}
+[3.662467] (-) TimerEvent: {}
+[3.763769] (-) TimerEvent: {}
+[3.865150] (-) TimerEvent: {}
+[3.966489] (-) TimerEvent: {}
+[4.068040] (-) TimerEvent: {}
+[4.169690] (-) TimerEvent: {}
+[4.271113] (-) TimerEvent: {}
+[4.372977] (-) TimerEvent: {}
+[4.474501] (-) TimerEvent: {}
+[4.575869] (-) TimerEvent: {}
+[4.677445] (-) TimerEvent: {}
+[4.778768] (-) TimerEvent: {}
+[4.880187] (-) TimerEvent: {}
+[4.981790] (-) TimerEvent: {}
+[5.083278] (-) TimerEvent: {}
+[5.185208] (-) TimerEvent: {}
+[5.286801] (-) TimerEvent: {}
+[5.388331] (-) TimerEvent: {}
+[5.489854] (-) TimerEvent: {}
+[5.591471] (-) TimerEvent: {}
+[5.693202] (-) TimerEvent: {}
+[5.794695] (-) TimerEvent: {}
+[5.875886] (imav_2017) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.880672] (imav_2017) StdoutLine: {'line': b'See also "/mnt/d/IMAV_2017_Virtual_Challenge/build/imav_2017/CMakeFiles/CMakeOutput.log".\n'}
+[5.895097] (-) TimerEvent: {}
+[5.962003] (imav_2017) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[5.971301] (imav_2017) CommandEnded: {'returncode': 2}
+[5.995388] (-) TimerEvent: {}
+[6.096883] (-) TimerEvent: {}
+[6.198060] (-) TimerEvent: {}
+[6.299417] (-) TimerEvent: {}
+[6.400734] (-) TimerEvent: {}
+[6.502151] (-) TimerEvent: {}
+[6.603359] (-) TimerEvent: {}
+[6.710508] (-) TimerEvent: {}
+[6.811852] (-) TimerEvent: {}
+[6.913299] (-) TimerEvent: {}
+[7.014755] (-) TimerEvent: {}
+[7.116247] (-) TimerEvent: {}
+[7.217821] (-) TimerEvent: {}
+[7.319309] (-) TimerEvent: {}
+[7.421785] (-) TimerEvent: {}
+[7.523245] (-) TimerEvent: {}
+[7.625136] (-) TimerEvent: {}
+[7.726512] (-) TimerEvent: {}
+[7.828082] (-) TimerEvent: {}
+[7.925451] (imav_2017) JobEnded: {'identifier': 'imav_2017', 'rc': 2}
+[7.965257] (-) TimerEvent: {}
+[7.966176] (-) EventReactorShutdown: {}
