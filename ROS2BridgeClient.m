@@ -124,7 +124,6 @@ classdef ROS2BridgeClient < handle
             catch ME
                 rethrow(ME);
             end
-            end
         end
         
         function disconnect(obj)
