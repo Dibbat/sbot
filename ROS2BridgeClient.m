@@ -131,6 +131,53 @@ classdef ROS2BridgeClient < handle
             end
         end
         
+        function publish_velocity(obj, vx, vy, vz, wx, wy, wz)
+            % Publish velocity command to drone
+            % vx, vy, vz: linear velocity (m/s)
+            % wx, wy, wz: angular velocity (rad/s)
+            
+            if ~obj.isConnected
+                warning('[ROS2BridgeClient] Not connected');
+                return;
+            end
+            
+            try
+                % Create command JSON
+                cmd = struct();
+                cmd.type = 'velocity_command';
+                cmd.velocity = struct();
+                cmd.velocity.linear_x = vx;
+                cmd.velocity.linear_y = vy;
+                cmd.velocity.linear_z = vz;
+                cmd.velocity.angular_x = wx;
+                cmd.velocity.angular_y = wy;
+                cmd.velocity.angular_z = wz;
+                
+                jsonStr = jsonencode(cmd);
+                msgBytes = uint8(jsonStr);
+                
+                % Prepare message: 4-byte big-endian length + JSON payload
+                msgLength = uint32(length(msgBytes));
+                lengthBytes = [
+                    bitshift(msgLength, -24);
+                    bitand(bitshift(msgLength, -16), uint32(255));
+                    bitand(bitshift(msgLength, -8), uint32(255));
+                    bitand(msgLength, uint32(255))
+                ];
+                
+                % Send to bridge
+                write(obj.tcpClient, lengthBytes, 'uint8');
+                write(obj.tcpClient, msgBytes, 'uint8');
+                
+                fprintf('[ROS2BridgeClient] Published velocity: [%.2f, %.2f, %.2f] m/s, [%.2f, %.2f, %.2f] rad/s\n', ...
+                    vx, vy, vz, wx, wy, wz);
+                    
+            catch ME
+                warning('[ROS2BridgeClient] Error publishing velocity: %s', ME.message);
+                rethrow(ME);
+            end
+        end
+        
         function disconnect(obj)
             % Disconnect from TCP bridge
             if ~isempty(obj.tcpClient) && isvalid(obj.tcpClient)
