@@ -57,42 +57,73 @@ classdef ROS2BridgeClient < handle
                 % Set timeout
                 obj.tcpClient.Timeout = timeout;
                 
-                % Read 4-byte length prefix (big-endian uint32)
-                lengthBytes = read(obj.tcpClient, 4, 'uint8');
+                % Read all available data (read() with no count argument reads all available)
+                tic;  % Start timer
+                allBytes = [];
                 
-                if isempty(lengthBytes) || length(lengthBytes) < 4
-                    error('Failed to read message length');
+                while toc < timeout
+                    % Try to read available bytes
+                    try
+                        availableBytes = obj.tcpClient.read(obj.tcpClient.BytesAvailable, 'uint8');
+                        if ~isempty(availableBytes)
+                            allBytes = [allBytes; availableBytes];
+                        end
+                    catch
+                        % No data available yet
+                    end
+                    
+                    % If we have at least 4 bytes, try to parse length
+                    if length(allBytes) >= 4
+                        break;
+                    end
+                    pause(0.01);  % Small delay to allow data to arrive
                 end
                 
-                % Convert 4 bytes to uint32 (big-endian)
-                msgLength = uint32(lengthBytes(1)) * 256^3 + ...
-                            uint32(lengthBytes(2)) * 256^2 + ...
-                            uint32(lengthBytes(3)) * 256 + ...
-                            uint32(lengthBytes(4));
+                if length(allBytes) < 4
+                    error('Failed to read message length (got %d bytes)', length(allBytes));
+                end
                 
-                % Sanity check - message shouldn't be > 1MB
+                % Extract length from first 4 bytes
+                msgLength = uint32(allBytes(1)) * 256^3 + ...
+                            uint32(allBytes(2)) * 256^2 + ...
+                            uint32(allBytes(3)) * 256 + ...
+                            uint32(allBytes(4));
+                
+                % Sanity check
                 if msgLength > 1048576
                     error('Invalid message length: %d bytes', msgLength);
                 end
                 
-                % Read message data
-                msgBytes = read(obj.tcpClient, msgLength, 'uint8');
-                
-                if isempty(msgBytes) || length(msgBytes) < msgLength
-                    error('Failed to read complete message (got %d of %d bytes)', ...
-                        length(msgBytes), msgLength);
+                % Read until we have length + 4 (for the header)
+                totalNeeded = msgLength + 4;
+                tic;
+                while length(allBytes) < totalNeeded && toc < timeout
+                    try
+                        availableBytes = obj.tcpClient.read(obj.tcpClient.BytesAvailable, 'uint8');
+                        if ~isempty(availableBytes)
+                            allBytes = [allBytes; availableBytes];
+                        end
+                    catch
+                        % No data available yet
+                    end
+                    pause(0.01);
                 end
+                
+                if length(allBytes) < totalNeeded
+                    error('Failed to read complete message (got %d of %d bytes)', ...
+                        length(allBytes), totalNeeded);
+                end
+                
+                % Extract message bytes (skip 4-byte header)
+                msgBytes = allBytes(5:4+msgLength);
                 
                 % Convert bytes to string and parse JSON
                 jsonStr = char(msgBytes);
                 data = jsondecode(jsonStr);
                 
             catch ME
-                if strcmp(ME.identifier, 'instrument:tcpip:read:timedOut')
-                    error('Timeout waiting for message from bridge');
-                else
-                    rethrow(ME);
-                end
+                rethrow(ME);
+            end
             end
         end
         
