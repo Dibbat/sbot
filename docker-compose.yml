@@ -60,9 +60,12 @@ services:
       - imav_log:/app/log
     
     # Network and hardware
+    # Use bridge network on Linux VM to allow port exposure
     network_mode: host
     ports:
       - "9999:9999"  # TCP Bridge for MATLAB connection
+    expose:
+      - "9999"
     devices:
       - /dev/snd
     
