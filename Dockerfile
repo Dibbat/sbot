@@ -21,7 +21,6 @@ COPY urdf /app/src/imav_2017/urdf
 COPY worlds /app/src/imav_2017/worlds
 COPY meshes /app/src/imav_2017/meshes
 COPY plugins /app/src/imav_2017/plugins
-COPY resource* /app/src/imav_2017/
 
 # Build the workspace (base image has all required packages pre-installed)
 RUN bash -c "source /opt/ros/humble/setup.bash && \
