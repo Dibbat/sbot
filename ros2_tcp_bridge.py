@@ -52,7 +52,7 @@ class ROS2TCPBridge(Node):
         self.server_thread = threading.Thread(target=self.tcp_server, daemon=True)
         self.server_thread.start()
         
-        self.get_logger().info(f'TCP Server listening on 127.0.0.1:{port}')
+        self.get_logger().info(f'TCP Server listening on 0.0.0.0:{port}')
         self.get_logger().info('Ready to receive client connections')
     
     def tcp_server(self):
@@ -60,11 +60,11 @@ class ROS2TCPBridge(Node):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         try:
-            server_socket.bind(('127.0.0.1', self.bridge_port))
+            server_socket.bind(('0.0.0.0', self.bridge_port))
             server_socket.listen(5)
             server_socket.settimeout(1.0)
             
-            self.get_logger().info(f'Server socket bound to 127.0.0.1:{self.bridge_port}')
+            self.get_logger().info(f'Server socket bound to 0.0.0.0:{self.bridge_port}')
         except Exception as e:
             self.get_logger().error(f'Failed to bind socket: {e}')
             return
