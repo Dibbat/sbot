@@ -32,8 +32,8 @@ services:
     
     # ROS 2 and Gazebo environment
     environment:
-      # Windows/WSL DISPLAY setting - requires XLaunch running
-      - DISPLAY=host.docker.internal:0.0
+      # For Ubuntu VM (skip DISPLAY on native Linux)
+      # - DISPLAY=:0  # Uncomment if running X11 on Ubuntu
       - QT_X11_NO_MITSHM=1
       - ROS_DOMAIN_ID=25
       - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
@@ -61,7 +61,6 @@ services:
     
     # Network and hardware
     # Use bridge network on Linux VM to allow port exposure
-    network_mode: host
     ports:
       - "9999:9999"  # TCP Bridge for MATLAB connection
     expose:
