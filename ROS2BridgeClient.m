@@ -12,9 +12,9 @@ classdef ROS2BridgeClient < handle
     methods
         function obj = ROS2BridgeClient(host, port)
             % Constructor: Initialize TCP bridge client
-            % Usage: client = ROS2BridgeClient('127.0.0.1', 9999);
+            % Usage: client = ROS2BridgeClient('192.168.0.38', 9999);  % Ubuntu VM
             
-            if nargin < 1, host = '127.0.0.1'; end
+            if nargin < 1, host = '192.168.0.38'; end  % Default to Ubuntu VM IP
             if nargin < 2, port = 9999; end
             
             obj.host = host;
