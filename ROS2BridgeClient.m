@@ -1,6 +1,12 @@
 classdef ROS2BridgeClient < handle
     % ROS2BridgeClient TCP client for ROS2 Bridge communication
     % Connects to ros2_tcp_bridge.py running in Docker
+    % 
+    % Usage:
+    %   client = ROS2BridgeClient('192.168.0.38', 9999);
+    %   client.connect();
+    %   odom = client.receive_message(5);
+    %   disp(odom);
     
     properties (Access = private)
         tcpClient       % tcpclient object
@@ -12,7 +18,7 @@ classdef ROS2BridgeClient < handle
     methods
         function obj = ROS2BridgeClient(host, port)
             % Constructor: Initialize TCP bridge client
-            % Usage: client = ROS2BridgeClient('192.168.0.38', 9999);  % Ubuntu VM
+            % Usage: client = ROS2BridgeClient('192.168.0.38', 9999);
             
             if nargin < 1, host = '192.168.0.38'; end  % Default to Ubuntu VM IP
             if nargin < 2, port = 9999; end
@@ -48,29 +54,42 @@ classdef ROS2BridgeClient < handle
             end
             
             try
-                % Read 4-byte length prefix (big-endian uint32)
+                % Set timeout
                 obj.tcpClient.Timeout = timeout;
+                
+                % Read 4-byte length prefix (big-endian uint32)
                 lengthBytes = read(obj.tcpClient, 4, 'uint8');
                 
-                if isempty(lengthBytes)
-                    data = [];
-                    return;
+                if isempty(lengthBytes) || length(lengthBytes) < 4
+                    error('Failed to read message length');
                 end
                 
-                % Convert bytes to length
-                msgLength = typecast(uint8(lengthBytes), 'uint32');
-                msgLength = swapbytes(msgLength);  % Big-endian to little-endian
+                % Convert 4 bytes to uint32 (big-endian)
+                msgLength = uint32(lengthBytes(1)) * 256^3 + ...
+                            uint32(lengthBytes(2)) * 256^2 + ...
+                            uint32(lengthBytes(3)) * 256 + ...
+                            uint32(lengthBytes(4));
+                
+                % Sanity check - message shouldn't be > 1MB
+                if msgLength > 1048576
+                    error('Invalid message length: %d bytes', msgLength);
+                end
                 
                 % Read message data
                 msgBytes = read(obj.tcpClient, msgLength, 'uint8');
-                jsonStr = char(msgBytes');
                 
-                % Parse JSON
+                if isempty(msgBytes) || length(msgBytes) < msgLength
+                    error('Failed to read complete message (got %d of %d bytes)', ...
+                        length(msgBytes), msgLength);
+                end
+                
+                % Convert bytes to string and parse JSON
+                jsonStr = char(msgBytes);
                 data = jsondecode(jsonStr);
                 
             catch ME
                 if strcmp(ME.identifier, 'instrument:tcpip:read:timedOut')
-                    data = [];
+                    error('Timeout waiting for message from bridge');
                 else
                     rethrow(ME);
                 end
