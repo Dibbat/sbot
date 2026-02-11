@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Exit if any command fails
-set -e
-
 # Source ROS 2 base environment
 source /opt/ros/humble/setup.bash
 
