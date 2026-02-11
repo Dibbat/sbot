@@ -1,0 +1,82 @@
+# IMAV 2017 Virtual Challenge - Docker Development Environment
+# 
+# This compose file sets up a development container with ROS 2 Humble and Gazebo
+# for Windows/WSL with volume mounts for live code editing.
+#
+# SETUP (run these commands first):
+#   1. Start XLaunch on Windows (Display 0) - required for GUI
+#   2. docker build -t imav_2017:latest .
+#
+# START DEVELOPMENT CONTAINER:
+#   docker-compose up -d
+#   docker-compose exec imav_dev bash
+#
+# REBUILD AFTER CODE CHANGES:
+#   cd /app && colcon build --packages-select imav_2017
+#   source install/setup.bash
+#
+# RUN GAZEBO:
+#   bash run_gzb.sh
+#
+# SPAWN QUADROTOR (in separate container terminal):
+#   bash start_uav.sh
+
+services:
+  imav_dev:
+    image: imav_2017:latest
+    container_name: imav_2017_dev
+    
+    # Interactive terminal support
+    stdin_open: true
+    tty: true
+    
+    # ROS 2 and Gazebo environment
+    environment:
+      # Windows/WSL DISPLAY setting - requires XLaunch running
+      - DISPLAY=host.docker.internal:0.0
+      - QT_X11_NO_MITSHM=1
+      - ROS_DOMAIN_ID=25
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      # FastRTPS profile for Windows/Docker communication
+      - FASTRTPS_DEFAULT_PROFILES_FILE=/app/DEFAULT_FASTRTPS_PROFILE.xml
+      # Gazebo paths - must be set for spawn_entity service to work
+      - GAZEBO_MODEL_PATH=/app/install/imav_2017/share/imav_2017/models:/usr/share/gazebo-11/models
+      - GAZEBO_PLUGIN_PATH=/app/install/imav_2017/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins
+    
+    # Volume mounts for live code editing
+    volumes:
+      - ./scripts:/app/src/imav_2017/scripts
+      - ./urdf:/app/src/imav_2017/urdf
+      - ./worlds:/app/src/imav_2017/worlds
+      - ./meshes:/app/src/imav_2017/meshes
+      - ./plugins:/app/src/imav_2017/plugins
+      - ./run_gzb.sh:/app/run_gzb.sh
+      - ./start_uav.sh:/app/start_uav.sh
+      - ./ros2_tcp_bridge.py:/app/ros2_tcp_bridge.py
+      
+      # Persist build artifacts between sessions
+      - imav_build:/app/build
+      - imav_install:/app/install
+      - imav_log:/app/log
+    
+    # Network and hardware
+    network_mode: host
+    ports:
+      - "9999:9999"  # TCP Bridge for MATLAB connection
+    devices:
+      - /dev/snd
+    
+    working_dir: /app
+    command: bash
+    
+    # Restart policy
+    restart: unless-stopped
+
+# Named volumes for persistent build artifacts
+volumes:
+  imav_build:
+    driver: local
+  imav_install:
+    driver: local
+  imav_log:
+    driver: local

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/FastRTPS/schemas/v1.0.0">
+  <participant profile_name="default_participant" is_default_profile="true">
+    <rtps>
+      <builtin>
+        <discovery_config>
+          <discoveryProtocol>SIMPLE</discoveryProtocol>
+          <EDP>SIMPLE</EDP>
+          <leaseDuration>
+            <sec>60</sec>
+          </leaseDuration>
+        </discovery_config>
+        <!-- Allow multicast for discovery - essential for Windows/Docker communication -->
+        <metatrafficMulticastLocatorList>
+          <locator>
+            <udpv4>
+              <address>239.255.0.1</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+        </metatrafficMulticastLocatorList>
+        <!-- Unicast locators for direct communication -->
+        <metatrafficUnicastLocatorList>
+          <locator>
+            <udpv4>
+              <address>0.0.0.0</address>
+              <port>7410</port>
+            </udpv4>
+          </locator>
+        </metatrafficUnicastLocatorList>
+        <!-- Initial peers for Windows/WSL/Docker cross-communication -->
+        <initialPeersList>
+          <locator>
+            <udpv4>
+              <address>127.0.0.1</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+          <locator>
+            <udpv4>
+              <address>localhost</address>
+              <port>7400</port>
+            </udpv4>
+          </locator>
+        </initialPeersList>
+      </builtin>
+    </rtps>
+  </participant>
+</profiles>
