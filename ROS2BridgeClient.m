@@ -57,6 +57,9 @@ classdef ROS2BridgeClient < handle
                 % Set timeout
                 obj.tcpClient.Timeout = timeout;
                 
+                % Wait a moment for data to arrive
+                pause(0.1);
+                
                 % Read all available data (read() with no count argument reads all available)
                 tic;  % Start timer
                 allBytes = [];
@@ -64,9 +67,11 @@ classdef ROS2BridgeClient < handle
                 while toc < timeout
                     % Try to read available bytes
                     try
-                        availableBytes = obj.tcpClient.read(obj.tcpClient.BytesAvailable, 'uint8');
-                        if ~isempty(availableBytes)
-                            allBytes = [allBytes; availableBytes];
+                        if obj.tcpClient.BytesAvailable > 0
+                            availableBytes = obj.tcpClient.read(obj.tcpClient.BytesAvailable, 'uint8');
+                            if ~isempty(availableBytes)
+                                allBytes = [allBytes; availableBytes];
+                            end
                         end
                     catch
                         % No data available yet
